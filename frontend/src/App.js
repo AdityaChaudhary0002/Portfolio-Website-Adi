@@ -441,52 +441,109 @@ const App = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors"
+                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors relative overflow-hidden"
               >
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">Coffee House</h3>
-                <p className="text-gray-300 mb-4">
-                  Virtual Coffee Shop App developed with React Native and TypeScript, featuring product browsing, 
-                  favorites, and dynamic shopping cart.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {['React Native', 'TypeScript', 'CSS'].map((tech) => (
-                    <span key={tech} className="bg-blue-600 px-2 py-1 rounded text-xs">{tech}</span>
-                  ))}
+                <div className="absolute inset-0 opacity-20">
+                  <img 
+                    src="https://images.unsplash.com/photo-1551650975-87deedd944c3" 
+                    alt="Coffee House App"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="text-sm text-gray-400">Apr 2025</div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold mb-4 text-blue-400">Coffee House</h3>
+                  <p className="text-gray-300 mb-4">
+                    Virtual Coffee Shop App developed with React Native and TypeScript, featuring product browsing, 
+                    favorites, and dynamic shopping cart.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {['React Native', 'TypeScript', 'CSS'].map((tech) => (
+                      <span key={tech} className="bg-blue-600 px-2 py-1 rounded text-xs">{tech}</span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-2 mb-2">
+                    <a 
+                      href="https://drive.google.com/drive/folders/1JZ0EL0VH1ZSPS8PKMU23dUBty4GjWzK9" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-green-600 px-3 py-1 rounded text-xs hover:bg-green-700 transition-colors"
+                    >
+                      📁 View Files
+                    </a>
+                  </div>
+                  <div className="text-sm text-gray-400">Apr 2025</div>
+                </div>
               </motion.div>
               
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors"
+                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors relative overflow-hidden"
               >
-                <h3 className="text-2xl font-bold mb-4 text-green-400">Byte Builder</h3>
-                <p className="text-gray-300 mb-4">
-                  Real-time coding platform with live code execution, Firebase authentication, and community features 
-                  for collaborative learning.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {['React.js', 'Node.js', 'Firebase', 'Socket.io'].map((tech) => (
-                    <span key={tech} className="bg-green-600 px-2 py-1 rounded text-xs">{tech}</span>
-                  ))}
+                <div className="absolute inset-0 opacity-20">
+                  <img 
+                    src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" 
+                    alt="Byte Builder Platform"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="text-sm text-gray-400">Jan 2025</div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold mb-4 text-green-400">Byte Builder</h3>
+                  <p className="text-gray-300 mb-4">
+                    Real-time coding platform with live code execution, Firebase authentication, and community features 
+                    for collaborative learning.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {['React.js', 'Node.js', 'Firebase', 'Socket.io'].map((tech) => (
+                      <span key={tech} className="bg-green-600 px-2 py-1 rounded text-xs">{tech}</span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-2 mb-2">
+                    <a 
+                      href="https://code-editor-6rqa.onrender.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 px-3 py-1 rounded text-xs hover:bg-blue-700 transition-colors"
+                    >
+                      🚀 Live Demo
+                    </a>
+                  </div>
+                  <div className="text-sm text-gray-400">Jan 2025</div>
+                </div>
               </motion.div>
               
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors"
+                className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors relative overflow-hidden"
               >
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Ecommerce Website</h3>
-                <p className="text-gray-300 mb-4">
-                  Modern responsive ecommerce site with shopping cart, product filters, wishlist, and order tracking functionality.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {['React.js', 'Vite', 'Tailwind CSS'].map((tech) => (
-                    <span key={tech} className="bg-purple-600 px-2 py-1 rounded text-xs">{tech}</span>
-                  ))}
+                <div className="absolute inset-0 opacity-20">
+                  <img 
+                    src="https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg" 
+                    alt="Ecommerce Website"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div className="text-sm text-gray-400">Dec 2024</div>
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold mb-4 text-purple-400">Ecommerce Website</h3>
+                  <p className="text-gray-300 mb-4">
+                    Modern responsive ecommerce site with shopping cart, product filters, wishlist, and order tracking functionality.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {['React.js', 'Vite', 'Tailwind CSS'].map((tech) => (
+                      <span key={tech} className="bg-purple-600 px-2 py-1 rounded text-xs">{tech}</span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-2 mb-2">
+                    <a 
+                      href="https://e-commercccceee.netlify.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-blue-600 px-3 py-1 rounded text-xs hover:bg-blue-700 transition-colors"
+                    >
+                      🚀 Live Demo
+                    </a>
+                  </div>
+                  <div className="text-sm text-gray-400">Dec 2024</div>
+                </div>
               </motion.div>
             </div>
           </div>
