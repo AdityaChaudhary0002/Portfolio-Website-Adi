@@ -338,24 +338,33 @@ const App = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Quick Stats</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span>Projects Completed</span>
-                    <span className="text-blue-400 font-bold">3+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Problems Solved</span>
-                    <span className="text-green-400 font-bold">1500+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Max LeetCode Rating</span>
-                    <span className="text-purple-400 font-bold">1805</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Certifications</span>
-                    <span className="text-yellow-400 font-bold">5+</span>
+              <div className="flex flex-col items-center">
+                <div className="mb-6">
+                  <img 
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                    alt="Aditya Chaudhary Profile"
+                    className="w-48 h-48 rounded-full object-cover border-4 border-blue-400 shadow-lg hover:shadow-blue-400/30 transition-shadow duration-300"
+                  />
+                </div>
+                <div className="bg-gray-800 rounded-lg p-6 w-full">
+                  <h3 className="text-2xl font-bold mb-4 text-purple-400">Quick Stats</h3>
+                  <div className="space-y-3">
+                    <div className="flex justify-between">
+                      <span>Projects Completed</span>
+                      <span className="text-blue-400 font-bold">3+</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Problems Solved</span>
+                      <span className="text-green-400 font-bold">1500+</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Max LeetCode Rating</span>
+                      <span className="text-purple-400 font-bold">1805</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Certifications</span>
+                      <span className="text-yellow-400 font-bold">5+</span>
+                    </div>
                   </div>
                 </div>
               </div>
