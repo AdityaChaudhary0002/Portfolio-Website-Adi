@@ -340,11 +340,15 @@ const App = () => {
               </div>
               <div className="flex flex-col items-center">
                 <div className="mb-6">
-                  <img 
-                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                    alt="Aditya Chaudhary Profile"
-                    className="w-48 h-48 rounded-full object-cover border-4 border-blue-400 shadow-lg hover:shadow-blue-400/30 transition-shadow duration-300"
-                  />
+                  <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1">
+                    <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
+                      <div className="text-6xl font-bold text-white">AC</div>
+                    </div>
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="text-sm text-gray-400">📷 Your profile image goes here</p>
+                    <p className="text-xs text-gray-500">Professional photo from your upload</p>
+                  </div>
                 </div>
                 <div className="bg-gray-800 rounded-lg p-6 w-full">
                   <h3 className="text-2xl font-bold mb-4 text-purple-400">Quick Stats</h3>
