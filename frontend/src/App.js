@@ -564,17 +564,24 @@ const App = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { platform: 'LeetCode', rating: '1805', rank: 'Top 7%', color: 'yellow' },
-                { platform: 'CodeChef', rating: '1650', rank: '3-Star', color: 'green' },
-                { platform: 'Codeforces', rating: '1278', rank: 'Pupil', color: 'blue' },
-                { platform: 'GeeksforGeeks', rating: '1363', rank: 'Active', color: 'purple' },
+                { platform: 'LeetCode', rating: '1805', rank: 'Top 7%', color: 'orange', icon: '🟡', url: 'https://leetcode.com/' },
+                { platform: 'CodeChef', rating: '1650', rank: '3-Star', color: 'amber', icon: '🍽️', url: 'https://www.codechef.com/' },
+                { platform: 'Codeforces', rating: '1278', rank: 'Pupil', color: 'blue', icon: '🔵', url: 'https://codeforces.com/' },
+                { platform: 'GeeksforGeeks', rating: '1363', rank: 'Active', color: 'green', icon: '🟢', url: 'https://www.geeksforgeeks.org/' },
               ].map((achievement) => (
                 <motion.div
                   key={achievement.platform}
                   whileHover={{ scale: 1.05, rotateY: 5 }}
-                  className={`bg-gray-800 rounded-lg p-6 text-center hover:bg-${achievement.color}-900 transition-colors`}
+                  className="bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-700 transition-colors cursor-pointer"
+                  onClick={() => window.open(achievement.url, '_blank')}
                 >
-                  <div className={`text-4xl font-bold mb-2 text-${achievement.color}-400`}>
+                  <div className="text-3xl mb-2">{achievement.icon}</div>
+                  <div className={`text-4xl font-bold mb-2 ${
+                    achievement.color === 'orange' ? 'text-orange-400' :
+                    achievement.color === 'amber' ? 'text-amber-400' :
+                    achievement.color === 'blue' ? 'text-blue-400' :
+                    'text-green-400'
+                  }`}>
                     {achievement.rating}
                   </div>
                   <div className="text-lg font-semibold mb-1">{achievement.platform}</div>
