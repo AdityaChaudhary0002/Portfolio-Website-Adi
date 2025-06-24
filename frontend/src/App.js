@@ -299,11 +299,11 @@ const App = () => {
               <a href="mailto:aditya0002adi@gmail.com" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
                 📧 Contact Me
               </a>
-              <a href="#" className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-colors">
-                🔗 LinkedIn
+              <a href="https://www.linkedin.com/in/adityachaudhary0/" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg transition-colors">
+                💼 LinkedIn
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors">
-                🔗 GitHub
+              <a href="https://github.com/AdityaChaudhary0002" target="_blank" rel="noopener noreferrer" className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors">
+                💻 GitHub
               </a>
             </div>
           </motion.div>
