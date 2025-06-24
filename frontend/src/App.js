@@ -639,8 +639,11 @@ const App = () => {
                 <a href="mailto:aditya0002adi@gmail.com" className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-colors">
                   Send Message
                 </a>
-                <a href="#" className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition-colors">
-                  Download Resume
+                <a href="https://www.linkedin.com/in/adityachaudhary0/" target="_blank" rel="noopener noreferrer" className="bg-blue-700 hover:bg-blue-800 px-8 py-3 rounded-lg transition-colors">
+                  LinkedIn Profile
+                </a>
+                <a href="https://github.com/AdityaChaudhary0002" target="_blank" rel="noopener noreferrer" className="bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-lg transition-colors">
+                  GitHub Profile
                 </a>
               </div>
             </motion.div>
