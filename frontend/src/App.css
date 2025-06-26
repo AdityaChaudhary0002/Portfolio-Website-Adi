@@ -180,28 +180,43 @@ section {
 }
 
 /* Project cards */
-.project-card {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  border-radius: 12px;
-  padding: 2rem;
-  transition: all 0.3s ease;
+.project-card-container {
   position: relative;
+  border-radius: 0.5rem;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card::before {
+.project-card-container::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #4f46e5, #06b6d4, #10b981);
+  bottom: 0;
+  background-color: rgba(17, 24, 39, 0.8); /* bg-gray-900 with 80% opacity */
+  transition: background-color 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+.project-card-container:hover::before {
+  background-color: rgba(17, 24, 39, 0.6); /* Less dark on hover */
+}
+
+.project-card-container .project-card-content {
+  position: relative;
+  z-index: 10;
+  padding: 1.5rem;
+}
+
+.project-card-container {
+  background-size: 100%;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.project-card-container:hover {
+  background-size: 110%;
 }
 
 /* Achievement badges */
