@@ -607,7 +607,7 @@ const App = () => {
                 </motion.span>
                 <span className="text-gray-500">|</span>
                 <motion.span 
-                  className="text-green-400 font-semibold"
+                  className="text-blue-400 font-semibold"
                   initial={{ width: 0, overflow: "hidden" }}
                   animate={{ width: "auto" }}
                   transition={{ duration: 1.5, delay: 3.5, ease: "easeOut" }}
@@ -622,7 +622,7 @@ const App = () => {
                 </motion.span>
                 <span className="text-gray-500">|</span>
                 <motion.span 
-                  className="text-purple-400 font-semibold"
+                  className="text-cyan-400 font-semibold"
                   initial={{ width: 0, overflow: "hidden" }}
                   animate={{ width: "auto" }}
                   transition={{ duration: 1.5, delay: 4.5, ease: "easeOut" }}
@@ -666,7 +666,7 @@ const App = () => {
                 </span>
               </motion.div>
               <motion.div
-                className="bg-purple-600 px-4 py-2 rounded-full"
+                className="bg-blue-600 px-4 py-2 rounded-full"
                 whileHover={{ scale: 1.05, y: -2 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -675,7 +675,7 @@ const App = () => {
                 </span>
               </motion.div>
               <motion.div
-                className="bg-green-600 px-4 py-2 rounded-full"
+                className="bg-cyan-600 px-4 py-2 rounded-full"
                 whileHover={{ scale: 1.05, y: -2 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -843,7 +843,7 @@ const App = () => {
             <div className="flex flex-col items-center gap-8">
               {/* Profile Photo with 3D tilt/hover (true 3D effect) */}
               <motion.div
-                className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-lg flex items-center justify-center"
+                className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-lg flex items-center justify-center"
                 style={{
                   perspective: '800px',
                   transform: `translateX(${orbitX}px) translateY(${orbitY}px) rotateY(${imgTilt.x}deg) rotateX(${imgTilt.y}deg)`
@@ -862,46 +862,46 @@ const App = () => {
               </motion.div>
               {/* Quick Stats with icons */}
               <div
-                className="bg-gray-800 rounded-xl p-8 w-full max-w-xs shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(168,85,247,0.18)]"
+                className="bg-gray-800 rounded-xl p-8 w-full max-w-md shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(168,85,247,0.18)]"
               >
-                <div className="flex items-center mb-4">
-                  <img src="https://www.svgrepo.com/show/143589/chart.svg" alt="Quick Stats" className="w-8 h-8 mr-3" style={{ filter: 'invert(75%) sepia(50%) saturate(1500%) hue-rotate(240deg)' }} />
-                  <h3 className="text-xl font-bold text-purple-400">Quick Stats</h3>
+                <div className="flex items-center mb-6">
+                  <img src="https://www.svgrepo.com/show/143589/chart.svg" alt="Quick Stats" className="w-10 h-10 mr-3" style={{ filter: 'invert(75%) sepia(50%) saturate(1500%) hue-rotate(240deg)' }} />
+                  <h3 className="text-2xl font-bold text-purple-400">Quick Stats</h3>
                 </div>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <img src="https://www.svgrepo.com/show/474334/coding.svg" alt="Projects" className="w-5 h-5" />
-                      Projects Completed
+                <ul className="space-y-4 mt-6">
+                  <li className="flex items-center justify-between text-base">
+                    <span className="flex items-center gap-3">
+                      <img src="https://www.svgrepo.com/show/474334/coding.svg" alt="Projects" className="w-6 h-6" />
+                      <span className="font-medium">Projects Completed</span>
                     </span>
-                    <span className="font-bold text-blue-300">15+</span>
+                    <span className="font-bold text-blue-300 text-lg">15+</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <img src="https://www.svgrepo.com/show/4087/web-development.svg" alt="Problems" className="w-5 h-5" />
-                      Problems Solved
+                  <li className="flex items-center justify-between text-base">
+                    <span className="flex items-center gap-3">
+                      <img src="https://www.svgrepo.com/show/4087/web-development.svg" alt="Problems" className="w-6 h-6" />
+                      <span className="font-medium">Problems Solved</span>
                     </span>
-                    <span className="font-bold text-green-300">1500+</span>
+                    <span className="font-bold text-green-300 text-lg">1500+</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
+                  <li className="flex items-center justify-between text-base">
+                    <span className="flex items-center gap-3">
                       {/* LeetCode SVG icon for visibility */}
-                      <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g>
                           <path d="M25.5 16.1c0-2.2-1.1-4.2-2.9-5.4l-6.2-4.2c-1.1-.7-2.5-.7-3.6 0l-6.2 4.2C7.6 11.9 6.5 13.9 6.5 16.1v7.8c0 1.2.7 2.3 1.8 2.9l6.2 4.2c1.1.7 2.5.7 3.6 0l6.2-4.2c1.1-.7 1.8-1.8 1.8-2.9v-7.8z" fill="#FFA116"/>
                           <path d="M16 2.5c-1.1 0-2 .9-2 2v7.2c0 1.1.9 2 2 2s2-.9 2-2V4.5c0-1.1-.9-2-2-2z" fill="#292D3E"/>
                         </g>
                       </svg>
-                      Max LeetCode Rating
+                      <span className="font-medium">Max LeetCode Rating</span>
                     </span>
-                    <span className="font-bold text-purple-300">1805</span>
+                    <span className="font-bold text-purple-300 text-lg">1805</span>
                   </li>
-                  <li className="flex items-center justify-between text-sm">
-                    <span className="flex items-center gap-2">
-                      <img src="https://www.svgrepo.com/show/143589/chart.svg" alt="Certifications" className="w-5 h-5" />
-                      Certifications
+                  <li className="flex items-center justify-between text-base">
+                    <span className="flex items-center gap-3">
+                      <img src="https://www.svgrepo.com/show/143589/chart.svg" alt="Certifications" className="w-6 h-6" />
+                      <span className="font-medium">Certifications</span>
                     </span>
-                    <span className="font-bold text-yellow-300">5+</span>
+                    <span className="font-bold text-yellow-300 text-lg">5+</span>
                   </li>
                 </ul>
               </div>
@@ -934,11 +934,20 @@ const App = () => {
                   <img src="https://www.svgrepo.com/show/474334/coding.svg" alt="Programming icon" className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
                 </motion.div>
                 <h3 className="text-2xl font-bold mb-4 text-blue-400">Programming</h3>
-                <ul className="text-gray-300 space-y-2">
-                  <li>Python</li>
-                  <li>C++</li>
-                  <li>JavaScript</li>
-                </ul>
+                <div className="space-y-3 pl-4">
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Python</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">C++</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">JavaScript</span>
+                  </div>
+                </div>
               </motion.div>
               {/* Web Development */}
               <motion.div 
@@ -952,13 +961,28 @@ const App = () => {
                   <img src="https://www.svgrepo.com/show/4087/web-development.svg" alt="Web Dev icon" className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
                 </motion.div>
                 <h3 className="text-2xl font-bold mb-4 text-green-400">Web Development</h3>
-                <ul className="text-gray-300 space-y-2">
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Tailwind CSS</li>
-                  <li>React Native</li>
-                </ul>
+                <div className="space-y-3 pl-4">
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">React.js</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Node.js</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Express.js</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Tailwind CSS</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">React Native</span>
+                  </div>
+                </div>
               </motion.div>
               {/* Databases */}
               <motion.div 
@@ -972,11 +996,20 @@ const App = () => {
                   <img src="https://www.svgrepo.com/show/499816/database.svg" alt="Database icon" className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
                 </motion.div>
                 <h3 className="text-2xl font-bold mb-4 text-purple-400">Databases</h3>
-                <ul className="text-gray-300 space-y-2">
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>Firebase</li>
-                </ul>
+                <div className="space-y-3 pl-4">
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">MongoDB</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">MySQL</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Firebase</span>
+                  </div>
+                </div>
               </motion.div>
               {/* Tools & Tech */}
               <motion.div 
@@ -990,141 +1023,25 @@ const App = () => {
                   <img src="https://www.svgrepo.com/show/155193/wrench-and-screwdriver.svg" alt="Tools icon" className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
                 </motion.div>
                 <h3 className="text-2xl font-bold mb-4 text-amber-400">Tools & Tech</h3>
-                <ul className="text-gray-300 space-y-2">
-                  <li>Git</li>
-                  <li>Docker</li>
-                  <li>Figma</li>
-                  <li>Linux</li>
-                </ul>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Certifications Section */}
-        <section className="min-h-screen flex items-center px-4 py-20">
-          <div className="max-w-6xl mx-auto w-full">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">Certifications</h2>
-              <p className="text-lg text-gray-300">Professional credentials and continuous learning achievements</p>
-            </motion.div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "React.js Development",
-                  issuer: "Coursera",
-                  date: "2024",
-                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                  color: "blue",
-                  delay: 0.1
-                },
-                {
-                  title: "Node.js Backend Development",
-                  issuer: "Udemy",
-                  date: "2024",
-                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                  color: "green",
-                  delay: 0.2
-                },
-                {
-                  title: "MongoDB Database Design",
-                  issuer: "MongoDB University",
-                  date: "2024",
-                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-                  color: "green",
-                  delay: 0.3
-                },
-                {
-                  title: "Python Programming",
-                  issuer: "Coursera",
-                  date: "2023",
-                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-                  color: "yellow",
-                  delay: 0.4
-                },
-                {
-                  title: "Git & GitHub",
-                  issuer: "GitHub",
-                  date: "2023",
-                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-                  color: "gray",
-                  delay: 0.5
-                },
-                {
-                  title: "Web Development Fundamentals",
-                  issuer: "freeCodeCamp",
-                  date: "2023",
-                  icon: "https://www.svgrepo.com/show/4087/web-development.svg",
-                  color: "purple",
-                  delay: 0.6
-                }
-              ].map((cert, index) => (
-                <motion.div 
-                  key={cert.title}
-                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  whileHover={{ 
-                    y: -15, 
-                    scale: 1.05, 
-                    rotateY: 5,
-                    boxShadow: `0px 20px 40px ${
-                      cert.color === 'blue' ? 'rgba(96, 165, 250, 0.4)' :
-                      cert.color === 'green' ? 'rgba(52, 211, 153, 0.4)' :
-                      cert.color === 'yellow' ? 'rgba(245, 158, 11, 0.4)' :
-                      cert.color === 'gray' ? 'rgba(107, 114, 128, 0.4)' :
-                      'rgba(168, 85, 247, 0.4)'
-                    }`
-                  }}
-                  transition={{ 
-                    duration: 0.6, 
-                    delay: cert.delay,
-                    type: "spring",
-                    stiffness: 300
-                  }}
-                  className="bg-gray-800 rounded-lg p-6 text-center relative overflow-hidden group border border-gray-700"
-                >
-                  {/* Animated background gradient */}
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: '100%' }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  
-                  <div className="relative z-10">
-                    <motion.div 
-                      className="flex justify-center items-center mb-4"
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      <img src={cert.icon} alt={`${cert.title} icon`} className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
-                    </motion.div>
-                    <h3 className={`text-xl font-bold mb-2 ${
-                      cert.color === 'blue' ? 'text-blue-400' :
-                      cert.color === 'green' ? 'text-green-400' :
-                      cert.color === 'yellow' ? 'text-yellow-400' :
-                      cert.color === 'gray' ? 'text-gray-400' :
-                      'text-purple-400'
-                    }`}>{cert.title}</h3>
-                    <p className="text-gray-300 mb-1">{cert.issuer}</p>
-                    <p className="text-sm text-gray-400">{cert.date}</p>
-                    
-                    {/* Verification badge */}
-                    <div className="mt-4 inline-flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-full">
-                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span className="text-xs text-gray-300">Verified</span>
-                    </div>
+                <div className="space-y-3 pl-4">
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Git</span>
                   </div>
-                </motion.div>
-              ))}
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Docker</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Figma</span>
+                  </div>
+                  <div className="flex items-start justify-start gap-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="w-6 h-6 flex-shrink-0" />
+                    <span className="text-gray-300">Linux</span>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -1388,6 +1305,134 @@ const App = () => {
           </div>
         </section>
 
+        {/* Certifications Section */}
+        <section className="min-h-screen flex items-center px-4 py-20">
+          <div className="max-w-6xl mx-auto w-full">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">Certifications</h2>
+              <p className="text-lg text-gray-300">Professional credentials and continuous learning achievements</p>
+            </motion.div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "React.js Development",
+                  issuer: "Coursera",
+                  date: "2024",
+                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                  color: "blue",
+                  delay: 0.1
+                },
+                {
+                  title: "Node.js Backend Development",
+                  issuer: "Udemy",
+                  date: "2024",
+                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                  color: "green",
+                  delay: 0.2
+                },
+                {
+                  title: "MongoDB Database Design",
+                  issuer: "MongoDB University",
+                  date: "2024",
+                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+                  color: "green",
+                  delay: 0.3
+                },
+                {
+                  title: "Python Programming",
+                  issuer: "Coursera",
+                  date: "2023",
+                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                  color: "yellow",
+                  delay: 0.4
+                },
+                {
+                  title: "Git & GitHub",
+                  issuer: "GitHub",
+                  date: "2023",
+                  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                  color: "gray",
+                  delay: 0.5
+                },
+                {
+                  title: "Web Development Fundamentals",
+                  issuer: "freeCodeCamp",
+                  date: "2023",
+                  icon: "https://www.svgrepo.com/show/4087/web-development.svg",
+                  color: "purple",
+                  delay: 0.6
+                }
+              ].map((cert, index) => (
+                <motion.div 
+                  key={cert.title}
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  whileHover={{ 
+                    y: -15, 
+                    scale: 1.05, 
+                    rotateY: 5,
+                    boxShadow: `0px 20px 40px ${
+                      cert.color === 'blue' ? 'rgba(96, 165, 250, 0.4)' :
+                      cert.color === 'green' ? 'rgba(52, 211, 153, 0.4)' :
+                      cert.color === 'yellow' ? 'rgba(245, 158, 11, 0.4)' :
+                      cert.color === 'gray' ? 'rgba(107, 114, 128, 0.4)' :
+                      'rgba(168, 85, 247, 0.4)'
+                    }`
+                  }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: cert.delay,
+                    type: "spring",
+                    stiffness: 300
+                  }}
+                  className="bg-gray-800 rounded-lg p-6 text-center relative overflow-hidden group border border-gray-700"
+                >
+                  {/* Animated background gradient */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent"
+                    initial={{ x: '-100%' }}
+                    whileHover={{ x: '100%' }}
+                    transition={{ duration: 0.6 }}
+                  />
+                  
+                  <div className="relative z-10">
+                    <motion.div 
+                      className="flex justify-center items-center mb-4"
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <img src={cert.icon} alt={`${cert.title} icon`} className="w-16 h-16" style={{ filter: 'invert(1)' }}/>
+                    </motion.div>
+                    <h3 className={`text-xl font-bold mb-2 ${
+                      cert.color === 'blue' ? 'text-blue-400' :
+                      cert.color === 'green' ? 'text-green-400' :
+                      cert.color === 'yellow' ? 'text-yellow-400' :
+                      cert.color === 'gray' ? 'text-gray-400' :
+                      'text-purple-400'
+                    }`}>{cert.title}</h3>
+                    <p className="text-gray-300 mb-1">{cert.issuer}</p>
+                    <p className="text-sm text-gray-400">{cert.date}</p>
+                    
+                    {/* Verification badge */}
+                    <div className="mt-4 inline-flex items-center gap-2 bg-gray-700 px-3 py-1 rounded-full">
+                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-xs text-gray-300">Verified</span>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="min-h-screen flex items-center px-4 py-20 bg-black/80">
           <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12">
@@ -1450,7 +1495,7 @@ const App = () => {
                   email: form.elements[1].value,
                   message: form.elements[2].value
                 };
-                const res = await fetch('https://formspree.io/f/xdoqzqzq', {
+                const res = await fetch('https://formspree.io/f/manjalpg', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({
